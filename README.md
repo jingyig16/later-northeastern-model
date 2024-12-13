@@ -18,67 +18,39 @@ Access with Northeastern Google account: [https://drive.google.com/file/d/1GQDtw
 
 File structure:
 
+```
 later-northeastern-model/
-
-├── README.md                     # Project documentation
-
-├── .gitignore                   # Git ignore rules
-
-├── main.py                  # Main application code
-
-├── config.py                  # Configuration of file pathes
-
-├── utils.py                  # Script to download images to local folder
-
+├── README.md                 # Project documentation
+├── main.py                   # Main application entry point
+├── config.py                 # Path configurations
+├── utils.py                  # Image download utility
 │
-
-├── models/                  # Model-related code
-
+├── models/                   # Model implementations
 │   ├── __init__.py
-
-│   ├── clip_model.py        # CLIP model implementation
-
-│   ├── faiss_model.py       # FAISS indexing implementation
-
-│   ├── vlm_model.py         # Vision Language Model implementation
-
-│   └── mistral-7b-instruct-v0.2.Q5_K_M.gguf       # FAISS indexing implementation
-
+│   ├── clip_model.py         # CLIP model wrapper
+│   ├── faiss_model.py        # FAISS indexing system
+│   ├── vlm_model.py          # Vision Language Model
+│   └── mistral-7b-instruct-v0.2.Q5_K_M.gguf
 │
-
-│── preprocessing/           # Data preprocessing code
-
-│   └── preprocessing.py     # Image preprocessing logic
-
+├── preprocessing/            # Data preprocessing
+│   └── preprocessing.py      # Image preprocessing pipeline
 │
-
-│── embeddings/              # Embedding generation code
-
-│   └── embeddings.py        # Embedding generation logic
-
+├── embeddings/               # Feature extraction
+│   └── embeddings.py         # Embedding generation
 │
-
-├── clustering/              # Clustering logic
-
+├── clustering/               # Classification logic
 │   ├── __init__.py
-
-│   └── categorymanager.py   # Category management implementation
-
+│   └── categorymanager.py    # Category management system
 │
-
-├── data/                        # Data directory
-
-│   └── dataset.csv              # Original Dataset file
-
-├── images/                        # Image directory downloaded from utils.py
-
-├── .gitignore                     
-
+├── data/                     # Data directory
+│   └── dataset.csv           # Original dataset
 │
-
-└── faiss_index/                  # Output directory
-
-    └── index_file.index         # FAISS index file
+├── images/                   # Downloaded images
+├── faiss_index/             # Index storage
+│   └── index_file.index     # FAISS index file
+│
+└── .gitignore               # Git ignore rules
+```
 
 contents in .gitignore:
   ```
