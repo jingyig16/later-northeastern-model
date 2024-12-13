@@ -1,0 +1,11 @@
+numpy
+torch
+torchvision
+Pillow
+faiss-cpu
+scikit-learn
+transformers
+clip @ git+https://github.com/openai/CLIP.git
+llama-cpp-python
+pandas
+tqdm
